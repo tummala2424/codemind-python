@@ -1,8 +1,7 @@
 n=int(input())
-a=list(map(int,input().split()))
-s=set(a)
-c=0
-for i in s:
-    if i%2!=0:
-        c+=1
-print(c)
+a=set(list(map(int,input().split())))
+s=0
+for i in a:
+    if i%2:
+        s+=1
+print(s)
